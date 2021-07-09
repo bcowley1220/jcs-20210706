@@ -14,7 +14,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 75px calc(100% - 75px);
+  grid-template-rows: 50px calc(100% - 50px);
   grid-template-areas: "top" "bottom";
 }
 header {
@@ -40,4 +40,18 @@ main {
 
 .calendarSection > iframe {
   width: 100%;
+}
+
+.menuItem {
+  text-align: center;
+}
+.tab-content {
+    max-height:80vh;
+    overflow-x: auto;
+}
+h3.title.is-6 {
+  text-align: center;
+}
+ul#dinnerMenuList>li {
+  margin: 2em 0;
 }
