@@ -10,15 +10,15 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
 
-    <title>John Cowley's Restaurant</title>
+    <title>John Cowley and Sons Irish Restaurant and Pub</title>
   </head>
   <body>
     <header>
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://johncowleyandsons.com/">
-            <!-- <img src="./assets/logo-only.jpg" alt="JCS Logo" height="100px" /> -->
-            John Cowley and Sons
+          <a class="navbar-item businessTitle" href="https://johncowleyandsons.com/">
+            <img src="./assets/logo-only.jpg" alt="JCS Logo" height="61px" />
+            John Cowley and Sons Irish Restaurant and Pub
           </a>
 
           <a
@@ -38,18 +38,17 @@
           <div class="navbar-start"></div>
 
           <div class="navbar-end">
-            <a class="navbar-item"> Home </a>
-            <a class="navbar-item"> Menus </a>
-            <a class="navbar-item"> About </a>
-            <a class="navbar-item"> Events </a>
-            <a class="navbar-item"> Contact </a>
-
+            <a href="#top" class="navbar-item"> Home </a>
+            <a class="navbar-item" href="#about"> About </a>
+            <a class="navbar-item" href="#menuSection"> Menus </a>
+            <a class="navbar-item" href="#calendarSection"> Events </a>
+            <a class="navbar-item" href="#contactUs"> Contact </a>
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-primary">
+                <a href="www.orders.cake.net/10233805" class="button is-primary">
                   <strong>Order Online!</strong>
                 </a>
-                <a class="button is-light"> Make Reservation! </a>
+                <button class="button is-light" onclick="modalVis()"> Make Reservation! </button>
               </div>
             </div>
           </div>
@@ -57,98 +56,201 @@
       </nav>
     </header>
 
-    <main>
-      <section class="landingSection">
-        <img src="./assets/building.jpg" alt="JCS Building" height="500px" />
-        <div class="section">
-          <h1 class="title is-3">Irish Restaurant and Pub</h1>
-          <p class="subtitle is-5">
-            Est. 1972 Third generation family business in Farmington, MI
-          </p>
-        </div>
-      </section>
-      <section class="menuSection section">
-        <!-- <div class="title is-5"> -->
-        <h2 class="title is-5">Menus</h2>
-        <!-- </div> -->
-        <div id="tabs-with-content">
-          <div class="tabs">
-            <ul>
-              <li><a>Dinner</a></li>
-              <li><a>Dessert</a></li>
-              <li><a>Brunch</a></li>
+    <main >
+      <div class="masonry-item1" id='top'>
+        <img src="./assets/ownersPic.PNG" alt="" width="100%" height="90vh" />
+      </div>
+      <section class="masonry" id="about">
+        <div class="masonryWrapper box">
+          <div class="row1">
+            <div class="intro-text">
+              <div class="">
+                <p class="">
+                  Established in 1972, our third generation family business in Farmington, MI
+                  offers a Gastro Pub experience to every guest. We serve dinner
+                  and brunch on Sundays, host live entertainment
+                  on the weekends, and hold monthly wine tasting events as well as
+                  banquet rooms offering private gatherings from 12-160 people.
+                </p>
+                <br />
+                <p>
+                  Seasonally we offer patio dining from April - October. We are
+                  dedicated to providing the best possible experience for all of
+                  our guests, while honoring our Irish roots. Sláinte!
+                </p>
+              </div>
+            </div>
+            <div class="intro-image">
+              <img
+                src="./assets/building.jpg"
+                alt=""
+                width="100%"
+                height="400px"
+              />
+            </div>
+          </div>
+          <div class="row2">
+            <div class="banquetImage">
+              <img
+                src="./assets/banquet.png"
+                alt=""
+                width="100%"
+                height="400px"
+              />
+              <br />
+              <p>
+                Our banquet manager, Greg Cowley is available by email -
+                <a href="mailto:greg@johncowleyandsons.com"
+                  >greg@johncowleyandsons.com</a
+                >.There is also a contact form on the bottom of this page if
+                you'd like to request more information.
+              </p>
+            </div>
+            <div class="banquetCopy">
+              <p>
+                Whether you're looking to host a small luncheon, party, memorial
+                banquet or a wedding, we have done it all. We have audio & visual
+                equipment available including a projector with a large screen. We offer a wide
+                variety of banquet options; from customized menus to unique
+                banquet rooms to suit your every need. We have a smaller side room downstairs
+                (the Coolhenry Room) that can seat 12 people, our main downstairs room can seat
+                85, and our upstairs seats 125. Our staff is trained in
+                banquet services to ensure that your function runs smoothly from
+                the planning stages to the execution of your event.
+              </p>
+              <p>
+                There is 3 hour parking available in the parking lot behind our
+                building as well as lots close by.
+              </p>
+              <br />
+            </div>
+          </div>
+          <section class="menuSection section" id="menuSection">
+            <!-- <div class="title is-5"> -->
+            <h2 class="title is-5">Menus</h2>
+            <!-- </div> -->
+            <div id="tabs-with-content">
+              <div class="tabs">
+                <ul>
+                  <li><a>Dinner</a></li>
+                  <li><a>Brunch</a></li>
+                  <li><a>Appetizer Banquet</a></li>
+                  <li><a>Main Banquet</a></li>
+                </ul>
+              </div>
+              <div class="">
+                <section class="tab-content" id="dinnerMenu">
+                  <embed
+                    src="./assets/9-2021-menu.pdf#navpanes=0&view=fit&zoom=100"
+                    type="application/pdf"
+                    width="100%"
+                    height="600px"
+                  />
+                </section>
+                <section class="tab-content">
+                  <embed
+                    src="./assets/Breakfast21.pdf#navpanes=0&view=fitzoom=100"
+                    type="application/pdf"
+                    width="100%"
+                    height="600px"
+                  />
+                </section>
+                <section class="tab-content">
+                  <embed
+                    src="./assets/Appetizer-Banquet-Menu-ilovepdf-compressed-1.pdf#navpanes=0&view=fit"
+                    type="application/pdf"
+                    width="100%"
+                    height="600px"
+                  />
+                </section>
+                <section class="tab-content">
+                  <embedmargin-top
+                    src="./assets/Banquet2018-ilovepdf-compressed.pdf#navpanes=0&view=fit"
+                    type="application/pdf"
+                    width="100%"
+                    height="600px"
+                  />
+                </section>
+              </div>
+            </div>
+          </section>
+          <section class="calendarSection section" id="calendarSection">
+            <h2 class="title is-5">Event Calendar</h2>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=s7gfdojm364ghf6mbrl027g7lg%40group.calendar.google.com&ctz=America%2FDetroit"
+              style="border: 0"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </section>
+
+          <section class="contactUs" id="contactUs">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.247887661995!2d-83.37838578409942!3d42.465016279179935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824b10901c5d881%3A0xe2dcf3af83649507!2sJohn%20Cowley%20%26%20Sons%20Irish%20Pub!5e0!3m2!1sen!2sus!4v1632016487428!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading=""
+            ></iframe>
+            <div class="contactInfo">
+              <h2>Contact Us</h2>
+            <ul class="contactinfo">
+              <li>
+                <span
+                  ><img
+                    src="./assets/placeholder.svg"
+                    alt="Location pin"
+                    height="10px"
+                /></span>
+                333336 Grand River Ave. <br />
+                Farmington, MI 38446
+              </li>
+              <li>
+                <span><img src="./assets/smartphone.svg" alt="Smartphone Icon" height="10px" /></span>
+                <a href="tel:248-474-5941"> 248-474-5941</a>
+              </li>
+              <li>
+                <span><img src="./assets/email.svg" alt="Email Icon" /></span>
+                <a href="mailto:info@johncowleys.com"> info@johncowleys.com</a>
+              </li>
+              <li>
+                <span><img src="./assets/facebook.png" alt="Facebook Icon" height="10px" /></span>
+                <a href="https://www.facebook.com/johncowleyandsons/"> John Cowley and Sons Facebook</a>
+              </li>
+              <li>
+                <span><img src="./assets/rewardsnetwork.jpeg" alt="Rewards Netword Logo" /></span>
+                <a href="https://www.rewardsnetwork.com/how-it-works/our-rewards-partners/"> Rewards Network</a>
+              </li>
+
             </ul>
+                      <!-- <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf6K55BX57ndlr6JbFpAMbOimjKdR0gHEnBwu8xgm5CuVJTYQ/viewform?embedded=true"
+              width="100%"
+              height="600"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            > -->
+            </div>
+  
+          </section>
+          <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <iframe
+              height="450"
+              width="350"
+              frameborder="0"
+              src="http://book.w8li.st/john-cowley-and-sons"
+            ></iframe>
+            </div>
+            <button class="modal-close is-large" onclick="modalVis()" aria-label="close"></button>
           </div>
-          <div class="">
-            <section class="tab-content" id="dinnerMenu">
-              <ul id="dinnerMenuList" class="box">
-                <li id="bigPlates">
-                  <h3 class="title is-6">Big Plates</h3>
-                </li>
-                <li id="sandwichBoard">
-                  <h3 class="title is-6">Sandwich Board</h3>
-                </li>
-                <li id="smallPlates">
-                  <h3 class="title is-6">Small Plates</h3>
-                </li>
-                <li id='soupsAndSalads'>
-                  <h3 class="title is-6">Soups and Salads</h3>
-                </li>
-              </ul>
-            </section>
-            <section class="tab-content">
-              <ul id="dessertMenuList" class="box">
-              </ul>
-            </section>
-            <section class="tab-content">
-              <ul id="brunchMenuList" class="box">
-                <li>Pending</li>
-              </ul>
-            </section>
-          </div>
+
         </div>
-      </section>
-      <section class="aboutSection section">
-        <div class="title is-5">About Us</div>
-        <div class="">
-          <div>
-            <img
-              src="./assets/ownersPic.PNG"
-              alt="Picture of Greg and Michael Cowley"
-              height="200px"
-            />
-          </div>
-          <div class="">
-            Third generation business offering a Gastro Pub experience to guests local and
-            far. We serve dinner and brunch on Sunday's, a dance floor with
-            live entertainment on the weekends, monthly wine tasting events as
-            well as banquet rooms offering private gatherings from 12-160
-            people. Seasonally we offer patio dining from April - October. We
-            are dedicated to providing the best possible experience for all of
-            our guests, while honoring our Irish roots. Sláinte!
-          </div>
-        </div>
-      </section>
-      <section class="calendarSection section">
-        <h2 class="title is-5">Event Calendar</h2>
-        <iframe
-          src="https://calendar.google.com/calendar/embed?src=s7gfdojm364ghf6mbrl027g7lg%40group.calendar.google.com&ctz=America%2FDetroit"
-          style="border: 0"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </section>
-      <section class="section">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSf6K55BX57ndlr6JbFpAMbOimjKdR0gHEnBwu8xgm5CuVJTYQ/viewform?embedded=true"
-          width="300"
-          height="600"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
       </section>
     </main>
     <script src="./script.js"></script>
